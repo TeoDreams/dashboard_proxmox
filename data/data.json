@@ -1,0 +1,105 @@
+{
+  "server": {
+    "hostname": "proxmox.local",
+    "status": "Online",
+    "cpu_usage": 28,
+    "ram_usage": 5.4
+  },
+  "vms": [
+    {
+      "id": 100,
+      "type": "CT",
+      "name": "Wireguard",
+      "status": "running"
+    },
+    {
+      "id": 101,
+      "type": "CT",
+      "name": "Portainer",
+      "status": "running"
+    },
+    {
+      "id": 102,
+      "type": "CT",
+      "name": "Immich",
+      "status": "running"
+    },
+    {
+      "id": 103,
+      "type": "CT",
+      "name": "Nextcloud",
+      "status": "running"
+    },
+    {
+      "id": 104,
+      "type": "CT",
+      "name": "Home Assistant",
+      "status": "running"
+    },
+    {
+      "id": 105,
+      "type": "VM",
+      "name": "Proxmox Backup Server",
+      "status": "stopped"
+    },
+    {
+      "id": 106,
+      "type": "CT",
+      "name": "Plex",
+      "status": "running"
+    },
+    {
+      "id": 107,
+      "type": "CT",
+      "name": "Pi-hole",
+      "status": "running"
+    }
+  ],
+  "zfs": {
+    "name": "vault",
+    "status": "ONLINE",
+    "used": "10TB",
+    "available": "5.93TB"
+  },
+  "storage": [
+    {
+      "name": "local",
+      "type": "dir",
+      "used": "236GB",
+      "total": "1TB"
+    },
+    {
+      "name": "nas",
+      "type": "nfs",
+      "used": "5.93TB",
+      "total": " 10TB"
+    }
+  ],
+  "backups": [
+    {
+      "name": "vm-106",
+      "date": "15-05-2025",
+      "status": "Ok"
+    },
+    {
+      "name": "vm-100",
+      "date": "15-05-2025",
+      "status": "Ok"
+    },
+    {
+      "name": "vm-103",
+      "date": "13-05-2025",
+      "status": "Error"
+    },
+    {
+      "name": "vm-101",
+      "date": "15-05-2025",
+      "status": "Ok"
+    },
+    {
+      "name": "vm-102",
+      "date": "15-05-2025",
+      "status": "Ok"
+    }
+  ]
+}
